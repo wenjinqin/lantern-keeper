@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #070a1a;
+  height: 100%;
+}
+
+#stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: radial-gradient(1200px 700px at 50% 38%, #131a3d 0%, #070a1a 62%);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+#game {
+  width: min(96vw, 1280px);
+  height: auto;
+  border: 1px solid #2c3870;
+  border-radius: 10px;
+  box-shadow: 0 0 64px rgba(255, 176, 66, 0.14), 0 18px 60px rgba(0, 0, 0, 0.55);
+  background: #0a0f26;
+}
+
+#hint {
+  color: #8d97c4;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}

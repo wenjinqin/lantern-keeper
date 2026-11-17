@@ -1,0 +1,28 @@
+// Lantern Keeper — central tuning values in one place.
+export const CONFIG = {
+  width: 1280,
+  height: 800,
+  playerRadius: 16,
+  playerSpeed: 265,
+  playerMaxHp: 100,
+  emberRadius: 26,
+  flareCooldown: 6,
+  flareRadius: 190,
+  flareCost: 3,
+  mothBaseSpeed: 52,
+  waveDuration: 26,
+  shardValue: 5,
+  emberPerShard: 1,
+  colors: {
+    night: '#0a0f26',
+    ground: '#0d1330',
+    gold: '#ffb042',
+    goldSoft: '#ffd88a',
+    ember: '#ff7847',
+    moth: '#aab6ff',
+    mothDark: '#5d6db3',
+    wisp: '#7fe7c4',
+    text: '#f3ead2',
+    dim: '#8d97c4',
+  },
+};

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Keeper — Mothstorm</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="stage">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="hint">Click the game, then move with WASD / arrow keys. Space = flare. P = pause.</div>
+</main>
+<script>
+  // Embed mode (?bare=1): the canvas fills the window with no page
+  // chrome around it, for fullscreen embeds and clean captures.
+  if (new URLSearchParams(location.search).has('bare')) {
+    document.getElementById('hint').remove();
+    const stage = document.getElementById('stage');
+    stage.style.minHeight = '0';
+    stage.style.gap = '0';
+    const game = document.getElementById('game');
+    game.style.width = '100vw';
+    game.style.border = '0';
+    game.style.borderRadius = '0';
+    game.style.boxShadow = 'none';
+  }
+</script>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
